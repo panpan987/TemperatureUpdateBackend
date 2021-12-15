@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo
+    username: root
+    password: root
+
+mybatis:
+  mapperLocations: classpath:mapper/**/*.xml
+  configuration:
+    jdbc-type-for-null: 'null'
